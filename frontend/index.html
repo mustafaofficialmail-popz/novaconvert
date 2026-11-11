@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NovaConvert</title><link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <b>🅽 Nova<span>Convert</span></b><small>YouTube video & playlist explorer</small>
+        </header>
+        <main>
+            <p class="tag">ALL-IN-ONE VIDEO TOOL</p>
+            <h1>Your video link.<br><em>All the details.</em></h1>
+            <p class="intro">Paste a YouTube video or playlist URL to preview public details.</p>
+            <section class="panel">
+                <form id="lookup-form">
+                    <label for="youtube-url">YouTube video or playlist URL</label>
+                    <div class="urlrow">
+                        <input id="youtube-url" type="url" placeholder="https://www.youtube.com/watch?v=..." required>
+                        <button id="lookup-btn">Fetch details →</button>
+                    </div></form><p id="error" class="error" hidden></p><p id="loading" hidden>Fetching details…</p><section id="result" hidden></section><p class="note">Uses the official YouTube Data API for public metadata. It does not download YouTube streams or bypass platform restrictions. For your own uploads, use YouTube Studio's download option.</p>
+            </section>
+        </main>
+        <footer>
+            © 2026 NovaConvert
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
